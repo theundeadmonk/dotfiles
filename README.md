@@ -30,7 +30,7 @@ Of course you can simple copy/symlink which config file that you want. But if yo
 After instalation you need to run
 
 ```
-  :VundleInstall
+  :PluginInstall
 ```
 
 on Vim command mode to install all plugins. There is no need to do something similar to Oh-My-Zsh or Package Control since they're self contained.
