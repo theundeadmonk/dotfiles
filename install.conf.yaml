@@ -13,7 +13,6 @@
     ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
-
 - 
   shell: 
     - 
