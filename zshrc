@@ -9,7 +9,7 @@ command -v prompt &> /dev/null && prompt off
 # Zgen setup #
 #################
 
-# Load antigen
+# Load zgen
 source ${HOME}/.dotfiles/zgen/zgen.zsh
 
 # check if there's no init script
@@ -22,6 +22,7 @@ if ! zgen saved; then
   # Plugins from robbyrussell's oh-my-zsh
   zgen oh-my-zsh plugins/tmux
   zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/bundler
   zgen oh-my-zsh plugins/pip
   zgen oh-my-zsh plugins/python
   zgen oh-my-zsh plugins/virtualenv

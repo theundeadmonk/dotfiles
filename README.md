@@ -10,10 +10,8 @@ This is my repository containing some configuration files that I use on my *nix 
 
 This repository includes configuration files for the following programs (so you need them installed to use this repo). You can, of course, install only the things you want/need, but you will need to copy/link the files/folders in "()" to make it work:
 
-  * mpv (.mpv)
-  * Sublime Text 3 (.config/sublime-text-3)
-  * vim/gvim (.vim/.vimrc/.gvimrc)
-  * zsh (.zshrc/.zsh/{oh-my-zsh/zsh-syntax-highlighting/zsh-completions})
+ * vim/gvim (.vim/.vimrc/.gvimrc)
+ * zsh (.zshrc/.zsh/{oh-my-zsh/zsh-syntax-highlighting/zsh-completions})
 
 Of course you need Git too ;) . If you do want to use my .gitconfig, don't forget to change the e-mail and name, unless you want to commit things with my name.
 
