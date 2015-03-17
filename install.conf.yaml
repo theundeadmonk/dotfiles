@@ -10,7 +10,6 @@
     ~/.gvimrc: gvimrc
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/.ssh: ssh
     ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
