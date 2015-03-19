@@ -48,7 +48,7 @@ Plugin 'zah/nimrod.vim'
 Plugin 'fasterthanlime/ooc.vim'
 
 " Color Scheme
-Plugin 'andrwb/vim-lapis256'
+Plugin 'magicalbanana/kareem256'
 
 call vundle#end()
 
@@ -82,7 +82,7 @@ map <space> /
 " Searching and replacing
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
-colorscheme lapis256
+colorscheme kareem256
 
 " Configure backspace so it should work the way it's supposed to
 set backspace=eol,start,indent
