@@ -1,5 +1,10 @@
 --- 
 - 
+  shell:
+    - 
+      - "scripts/install"
+      - "Installing base packages"
+- 
   clean: 
     - "~"
 - 
