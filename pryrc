@@ -45,7 +45,7 @@ Pry.config.ls.private_method_color = :bright_black
 # == PLUGINS ===
 # awesome_print gem: great syntax colorized printing
 # look at ~/.aprc for more settings for awesome_print
-require 'interactive_editor'
+# require 'interactive_editor'
 begin
   require 'rubygems'
   require 'awesome_print'
