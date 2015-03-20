@@ -10,7 +10,6 @@ export RBENV="$HOME/.rbenv/bin"
 export PATH=$RBENV:$HEROKU:$NPM:$MYBIN:$BIN:$SBIN:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 # env variables 
-export PGHOST=localhost
 export EDITOR="vim"
 export TERM=xterm-256color
 
