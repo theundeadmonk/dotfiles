@@ -20,5 +20,5 @@
       - "git submodule update --init --recursive --remote"
       - "Installing/updating submodules"
     - 
-      - "vim +PlugInstall +qall"
+      - "vim +PluginInstall +qall"
       - "Updating vim bundles"
