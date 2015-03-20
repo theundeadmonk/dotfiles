@@ -48,13 +48,14 @@ Plugin 'zah/nimrod.vim'
 Plugin 'fasterthanlime/ooc.vim'
 
 " Color Scheme
-Plugin 'magicalbanana/kareem256'
+Plugin 'magicalbanana/vim-colors'
 
 call vundle#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme mushroom
 " Sets how many lines of history VIM has to remember
 set history=1000
 
@@ -81,8 +82,6 @@ map <space> /
 
 " Searching and replacing
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
-
-colorscheme kareem256
 
 " Configure backspace so it should work the way it's supposed to
 set backspace=eol,start,indent
