@@ -1,24 +1,20 @@
---- 
-- 
-  clean: 
+---
+-
+  clean:
     - "~"
-- 
-  link: 
+-
+  link:
     ~/.dotfiles: ""
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
     ~/.gemrc: gemrc
-    ~/.gvimrc: gvimrc
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
-- 
-  shell: 
-    - 
+-
+  shell:
+    -
       - "git submodule update --init --recursive --remote"
       - "Installing/updating submodules"
-    - 
-      - "vim +PlugInstall +qall"
+    -
+      - "vim +PluginInstall +qall"
       - "Updating vim bundles"
