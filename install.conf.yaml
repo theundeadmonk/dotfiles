@@ -17,6 +17,7 @@
     ~/.pryrc: pryrc
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
+    ~/.aliases: aliases
 - 
   shell: 
     - 
