@@ -17,8 +17,7 @@ Of course you need Git too ;) . If you do want to use my .gitconfig, don't forge
 
 ## Installation
 
-Thanks to Dotbot it's very easy to use this repository. Simple clone this repo and execute the install script (you need Python 2/3 installed in your system):
-Cd into the directory and do the following:
+Thanks to Dotbot it's very easy to use this repository. Simple clone this repo and execute the install script (you need Python 2/3 installed in your system)
 
 ```
   $ ./install
