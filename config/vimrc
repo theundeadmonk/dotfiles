@@ -50,9 +50,10 @@ Plugin 'fasterthanlime/ooc.vim'
 " Color Scheme
 Plugin 'magicalbanana/vim-colors'
 
-call vundle#end()
+" Powerline
+Plugin 'bling/vim-airline'
 
-filetype plugin indent on
+call vundle#end()
 
 if filereadable(expand('~/.vimrc.local'))
   source ~/.vimrc.local

@@ -141,3 +141,4 @@
     alias updateplugins="cd ~/.dotfiles; git submodule update --init --recursive --remote; cd -"
     alias charginmahlazer="source ~/.zshrc"
     alias charginmahblaster="tmux source-file ~/.tmux.conf"
+    alias charginmahmustang="source ~/.vimrc"
