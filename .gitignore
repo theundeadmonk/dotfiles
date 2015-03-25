@@ -4,8 +4,5 @@ vim/bundle
 # Ignore tmux plugins (this will be managed by tmux-plugin itself)
 tmux/plugins
 
-# Ignore config folder (I don't want to track ALL config files)
-config/
-
 # Ignore my SSH keys ;)
 ssh/
