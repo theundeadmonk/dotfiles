@@ -18,10 +18,16 @@ Of course you need Git too ;) . If you do want to use my .gitconfig, don't forge
 ## Installation
 
 Thanks to Dotbot it's very easy to use this repository. Simple clone this repo and execute the install script (you need Python 2/3 installed in your system):
+Cd into the directory and do the following:
 
 ```
   $ ./install
+  $ Enter YAML file(s) to run, to use default press RETURN:
 ```
+
+By default, if you do not enter anything it will run the default.conf.yml file.
+If you have multiple yaml files for different setups you can choose that yaml file to execute.
+You are also able to pass in as many yaml files you want though I would caution this.
 
 Of course you can simple copy/symlink which config file that you want. But if you do that, you're on your own (e.g. managing updates).
 

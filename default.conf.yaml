@@ -12,6 +12,7 @@
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.vimrc.local: vimrc.local
+    ~/.tmux: tmux/
     ~/.tmux.conf: tmux.conf
     ~/.irbrc: irbrc
     ~/.pryrc: pryrc

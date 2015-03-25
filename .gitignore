@@ -1,6 +1,9 @@
 # Ignore Vundle plugins (this will be managed by Vundle itself instead of git)
 vim/bundle
 
+# Ignore tmux plugins (this will be managed by tmux-plugin itself)
+tmux/plugins
+
 # Ignore config folder (I don't want to track ALL config files)
 config/
 

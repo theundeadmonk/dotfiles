@@ -140,3 +140,4 @@
     alias i3config="gvim ~/.config/i3/config"
     alias updateplugins="cd ~/.dotfiles; git submodule update --init --recursive --remote; cd -"
     alias charginmahlazer="source ~/.zshrc"
+    alias charginmahblaster="tmux source-file ~/.tmux.conf"
