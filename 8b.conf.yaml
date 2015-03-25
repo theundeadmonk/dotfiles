@@ -6,7 +6,7 @@
   link: 
     ~/.dotfiles: ""
     ~/.gemrc: config/gemrc
-    ~/.vim: config/vim/
+    ~/.vim: vim/
     ~/.vimrc: config/vimrc
     ~/.vimrc.local: config/vimrc.local
     ~/.irbrc: config/irbrc
