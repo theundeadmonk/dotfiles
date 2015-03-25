@@ -23,7 +23,7 @@
   shell:
     - 
       command: git submodule update --init --recursive --remote
-      description: "Installing/Updating vim submodules"
+      description: "Installing/Updating git submodules"
       stdin: true
       stdout: true
       stderr: true

@@ -17,10 +17,16 @@
     ~/.zshenv: config/8b/zshenv
     ~/.aliases: config/aliases
 - 
-  shell: 
+  shell:
     - 
-      - "git submodule update --init --recursive --remote"
-      - "Installing/updating submodules"
+      command: git submodule update --init --recursive --remote
+      description: "Installing/Updating git submodules"
+      stdin: true
+      stdout: true
+      stderr: true
     - 
-      - "vi +PluginInstall +qall"
-      - "Updating vim bundles"
+      command: vi +PluginInstall +qall
+      description: "Installing/Updating vim bundles"
+      stdin: true
+      stdout: true
+      stderr: true
