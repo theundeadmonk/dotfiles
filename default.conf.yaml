@@ -1,29 +1,39 @@
 --- 
 - 
-  clean: 
+  clean:
     - "~"
 - 
   link: 
     ~/.dotfiles: ""
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
-    ~/.gemrc: gemrc
-    ~/.gvimrc: gvimrc
+    ~/.gitconfig: config/gitconfig
+    ~/.gitignore_global: config/gitignore_global
+    ~/.gemrc: config/gemrc
+    ~/.gvimrc: config/gvimrc
     ~/.vim: vim/
-    ~/.vimrc: vimrc
-    ~/.vimrc.local: vimrc.local
+    ~/.vimrc: config/vimrc
+    ~/.vimrc.local: config/vimrc.local
     ~/.tmux: tmux/
-    ~/.tmux.conf: tmux.conf
-    ~/.irbrc: irbrc
-    ~/.pryrc: pryrc
-    ~/.zshrc: zshrc
-    ~/.zshenv: zshenv
-    ~/.aliases: aliases
+    ~/.tmux.conf: config/tmux.conf
+    ~/.irbrc: config/irbrc
+    ~/.pryrc: config/pryrc
+    ~/.zshrc: config/zshrc
+    ~/.zshenv: config/zshenv
+    ~/.aliases: config/aliases
 - 
-  shell: 
+  shell:
     - 
-      - "git submodule update --init --recursive --remote"
-      - "Installing/updating submodules"
+      command: git submodule update --init --recursive --remote
+      description: "Installing/Updating vim submodules"
+      stdin: true
+      stdout: true
+      stderr: true
     - 
-      - "vim +PluginInstall +qall"
-      - "Updating vim bundles"
+      command: vim +PluginInstall +qall
+      description: "Installing/Updating vim bundles"
+      stdin: true
+      stdout: true
+      stderr: true
+
+# NOTES:
+# There is a streamlined way to do the shell commands but I prefer
+# seeing the stdin/out/err so this is why I set this as such.

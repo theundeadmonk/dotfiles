@@ -1,6 +1,6 @@
 # dotfiles
 
-Misc configuration files from my $HOME directory ;) ...
+This is my configuration files from my $HOME directory. :dancer:
 
 ## Introduction
 
@@ -30,7 +30,7 @@ You are also able to pass in as many yaml files you want though I would caution 
 
 Of course you can simple copy/symlink which config file that you want. But if you do that, you're on your own (e.g. managing updates).
 
-After instalation you need to run
+If vim +PluginInstall fails +qall you can open vim and execute this command:
 
 ```
   :PluginInstall
@@ -38,3 +38,8 @@ After instalation you need to run
 
 on Vim command mode to install all plugins. There is no need to do something similar to Oh-My-Zsh or Package Control since they're self contained.
 
+
+## Modifications
+
+Since I work with a lot of vm's I wanted to have an option by which you can choose the yaml file you want to read/execute. Many thanks to dotbot's @anishathalye
+for suggesting me an awesome solution.

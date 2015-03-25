@@ -1,0 +1,24 @@
+-- 
+- 
+  clean: 
+    - "~"
+- 
+  link: 
+    ~/.dotfiles: ""
+    ~/.gemrc: config/gemrc
+    ~/.vim: config/vim/
+    ~/.vimrc: config/vimrc
+    ~/.vimrc.local: config/vimrc.local
+    ~/.irbrc: config/irbrc
+    ~/.pryrc: config/pryrc
+    ~/.zshrc: config/zshrc
+    ~/.zshenv: config/8b/zshenv
+    ~/.aliases: config/aliases
+- 
+  shell: 
+    - 
+      - "git submodule update --init --recursive --remote"
+      - "Installing/updating submodules"
+    - 
+      - "vi +PluginInstall +qall"
+      - "Updating vim bundles"
