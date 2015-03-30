@@ -1,23 +1,12 @@
 scriptencoding utf-8
 set encoding=utf-8
 
-filetype plugin indent on
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme mushroom
 " Sets how many lines of history VIM has to remember
 set history=1000
-
-" Set to auto read when the file is changed outside of VIM (helpful since I
-" hybrid between VIM and Sublime
-set autoread
-
-" With this map leader setup it is possible for me to add key combinations
-" like <leader>w saves the current file
-let mapleader=","
-let g:mapleader=","
 
 " Fast Saving
 nmap <leader>w :w!<cr>
@@ -75,6 +64,11 @@ set completeopt-=preview
 
 " Format the status line
 " set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+"
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings

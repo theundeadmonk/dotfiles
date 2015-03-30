@@ -77,7 +77,6 @@ begin
   #             }
   #          }
 
- 
   AwesomePrint.defaults={:theme=>:solorized}
 
   begin
@@ -91,7 +90,7 @@ begin
   end
 
 
-      # aliases
+    # aliases
     #   Pry.config.commands.alias_command 'ch
     #     Pry.config.commands.alias_command 'cr'
     #     rescue LoadError => e
