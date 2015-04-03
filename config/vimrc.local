@@ -183,5 +183,3 @@ let g:ctrlp_user_command = {
 
 " Quit with :Q
 command -nargs=0 Quit :qa!
-
-
