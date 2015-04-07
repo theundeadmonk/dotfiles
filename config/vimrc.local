@@ -11,15 +11,6 @@ set history=1000
 " Fast Saving
 nmap <leader>w :w!<cr>
 
-" Searching in Visual Mode
-vmap <leader>r "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>/
-vmap <Leader>c "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>//n<CR>
-
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-
-" Searching and replacing
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 " Configure backspace so it should work the way it's supposed to
 set backspace=eol,start,indent
@@ -52,6 +43,7 @@ set noshowmode
 set list listchars=tab:▸\ ,trail:·,extends:>,precedes:<
 set omnifunc=syntaxcomplete#Complete
 set mouse=a
+set foldmethod=indent
 
 " Disable preview window
 set completeopt-=preview
@@ -70,8 +62,14 @@ set completeopt-=preview
 set textwidth=80
 set colorcolumn=+1
 
+""""""""""""""""""""""""""""""
+" => Navigation mappings
+""""""""""""""""""""""""""""""
+nnoremap <CR> G
+nnoremap <BS> gg
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Editing mappings
+" => General mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
 map 0 ^
@@ -128,8 +126,12 @@ map <Up>   gk
 nnoremap j gj
 nnoremap k gk
 
-" format the entire file
+" format entire file
 nmap <leader>fef ggVG=
+
+" formatted paste
+nmap <leader>p pV`]=
+nmap <leader>P PV`]=
 
 " Open new buffers
 nmap <leader>s<left>   :leftabove  vnew<cr>
@@ -152,7 +154,35 @@ nnoremap <leader><leader> <C-^>
 "  nmap ä <C-W>+<C-W>+
 "endif
 
-" NERDTree
+" Searching in Visual Mode
+vmap <leader>r "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>/
+vmap <Leader>c "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>//n<CR>
+
+" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+map <space> /
+
+" Searching and replacing
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
+" search text object and decide if you want to replace it
+" ys = copy hit
+" "+ys cop hit to clipboard
+" cs to change hit
+" gUs convert to uppercase
+" vs to visually select the hit, if you press s you will extend the selection
+vnoremap <silent> s //e<C-r>=&selection=='exclusive'?'+1':''<CR><CR>
+    \:<C-u>call histdel('search',-1)<Bar>let @/=histget('search',-1)<CR>gv
+omap s :normal vs<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => terryma/vim-expand-region
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => scrooloose/nerdtree
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>n :NERDTreeToggle<CR>
 
 let NERDTreeMapOpenInTab='\t'
@@ -160,10 +190,14 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore= ['tmp', '.yardoc', 'pkg']
 let NERDTreeShowHidden=1
 
-" SuperTab
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ervandew/ctrlp
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:SuperTabDefaultCompletionType = "context"
 
-" CtrlP
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => kien/ctrlp
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> t :CtrlP<cr>
 nnoremap <silent><leader>t :CtrlP<cr>
 "nnoremap <silent><leader>r :CtrlPMRUFiles<cr>
