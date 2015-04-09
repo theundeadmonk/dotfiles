@@ -10,7 +10,6 @@
     ~/.gemrc: config/gemrc
     ~/.gvimrc: config/gvimrc
     ~/.vim: vim/
-    ~/.vimrc.bundles: config/vimrc.bundles
     ~/.vimrc.local: config/vimrc.local
     ~/.vimrc: config/vimrc
     ~/.tmux: tmux/

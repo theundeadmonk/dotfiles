@@ -8,7 +8,6 @@
     ~/.gemrc: config/gemrc
     ~/.vim: vim/
     ~/.vimrc: config/vimrc
-    ~/.vimrc.bundles: config/vimrc.bundles
     ~/.vimrc.local: config/vimrc.local
     ~/.tmux: tmux/
     ~/.tmux.conf: config/tmux.conf

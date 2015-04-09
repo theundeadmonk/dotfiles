@@ -4,13 +4,20 @@ set encoding=utf-8
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Map leader
+let mapleader=","
+let g:mapleader=","
+
+" Set to auto read when the file is changed outside of VIM (helpful since I
+" hybrid between VIM and Sublime
+set autoread
 colorscheme mushroom
 " Sets how many lines of history VIM has to remember
 set history=1000
 
 " Fast Saving
 nmap <leader>w :w!<cr>
-
 
 " Configure backspace so it should work the way it's supposed to
 set backspace=eol,start,indent
@@ -43,6 +50,10 @@ set noshowmode
 set list listchars=tab:▸\ ,trail:·,extends:>,precedes:<
 set omnifunc=syntaxcomplete#Complete
 set mouse=a
+
+""""""""""""""""""""""""""""""
+" => Folding
+""""""""""""""""""""""""""""""
 set foldmethod=indent
 
 " Disable preview window
