@@ -54,7 +54,7 @@ set mouse=a
 """"""""""""""""""""""""""""""
 " => Folding
 """"""""""""""""""""""""""""""
-set foldmethod=indent
+set foldmethod=syntax
 
 " Disable preview window
 set completeopt-=preview
@@ -168,9 +168,6 @@ nnoremap <leader><leader> <C-^>
 " Searching in Visual Mode
 vmap <leader>r "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>/
 vmap <Leader>c "sy:%s/<C-R>=substitute(@s,"\n",'\\n','g')<CR>//n<CR>
-
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
 
 " Searching and replacing
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
