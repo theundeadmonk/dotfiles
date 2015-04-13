@@ -53,7 +53,7 @@ set mouse=a
 """"""""""""""""""""""""""""""
 " => Folding
 """"""""""""""""""""""""""""""
-set foldmethod=syntax
+"set foldmethod=syntax
 
 " Disable preview window
 set completeopt-=preview
