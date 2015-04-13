@@ -29,4 +29,4 @@ fi
 # 8b Aliases
 # ---------------------------------------
 
- alias cd_simplecredit='cd ~8b/brands/simplecredit/simplecredit'
+ alias cd_simplecredit='cd ~/8b/brands/simplecredit/simplecredit'
