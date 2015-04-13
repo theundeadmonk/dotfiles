@@ -6,8 +6,8 @@ info () {
   printf "\033[95m$1\n"
 }
 
-read -p "Enter YAML file(s) to run, to use default press RETURN: " DEFAULT_CONFIG_PREFIX
-DEFAULT_CONFIG_PREFIX=${DEFAULT_CONFIG_PREFIX:-default}
+read -p "Enter YAML file(s) to run, to use default press RETURN: " $1
+DEFAULT_CONFIG_PREFIX=${1:-default}
 
 CONFIG_SUFFIX=".conf.yaml"
 DOTBOT_DIR="dotbot"
@@ -18,7 +18,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
+for conf in ${DEFAULT_CONFIG_PREFIX}; do
     info "Using config: ${conf}${CONFIG_SUFFIX}"
     "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${conf}${CONFIG_SUFFIX}"
 done

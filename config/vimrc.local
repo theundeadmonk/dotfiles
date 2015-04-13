@@ -5,7 +5,6 @@ set encoding=utf-8
 " => General
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Map leader
 let mapleader=","
 let g:mapleader=","
 
@@ -67,7 +66,14 @@ set completeopt-=preview
 
 " Format the status line
 " set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
-"
+
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
 
 " Make it obvious where 80 characters is
 set textwidth=80

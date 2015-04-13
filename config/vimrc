@@ -5,7 +5,7 @@ end
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Let Vundle manage Vundle
+" Let Vundle manage Vundle {{{
 Plugin 'gmarik/vundle'
 
 " Plugin dependencies
@@ -68,6 +68,8 @@ Plugin 'magicalbanana/vim-colors'
 
 " Powerline
 Plugin 'bling/vim-airline'
+
+" }}}
 
 call vundle#end()
 

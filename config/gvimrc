@@ -1,10 +1,9 @@
 " MacVim GUI mode
 if has("gui_macvim")
-  set guifont=Source\ Code\ Pro:h13
-  set guioptions=aAce
-  set fuoptions=maxvert,maxhorz
-  set noballooneval
-  set noeb vb t_vb=
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Inconsolata\ for\ Powerline:h15
+   endif
 
   " resize current buffer by +/- 5
   nnoremap <M-Right> :vertical resize +5<CR>
@@ -19,4 +18,7 @@ if has("gui_macvim")
 
   " Automatically resize splits when resizing MacVim window
   autocmd VimResized * wincmd =
+endif
+
+if has("gui_running")
 endif

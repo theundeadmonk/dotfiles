@@ -24,3 +24,9 @@ fi
 # ---------------------------------------
  source /usr/local/share/chruby/chruby.sh
  source /usr/local/share/chruby/auto.sh
+
+# ---------------------------------------
+# 8b Aliases
+# ---------------------------------------
+
+ alias cd_simplecredit='cd ~8b/brands/simplecredit/simplecredit'
