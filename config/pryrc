@@ -15,7 +15,7 @@ end
 Pry.editor = 'vim'
 
 Pry.config.auto_indent = true
-Pry.config.history.file = "~/.pry_history"
+" Pry.config.history.file = "~/.pry_history"
 
 if defined?(PryByebug)
   Pry.commands.alias_command 'c', 'continue' rescue nil

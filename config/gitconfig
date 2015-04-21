@@ -2,7 +2,7 @@
 	email = kareemgan@gmail.com
 	name = Kareem Gan
 [push]
-	default = simple
+	default = current
 [core]
 	excludesfile = ~/.gitignore_ignore
 	editor = vim

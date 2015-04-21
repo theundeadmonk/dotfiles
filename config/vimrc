@@ -60,6 +60,7 @@ Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'slim-template/vim-slim'
 Plugin 'zah/nimrod.vim'
 Plugin 'fasterthanlime/ooc.vim'
 
@@ -68,8 +69,6 @@ Plugin 'magicalbanana/vim-colors'
 
 " Powerline
 Plugin 'bling/vim-airline'
-
-" }}}
 
 call vundle#end()
 
