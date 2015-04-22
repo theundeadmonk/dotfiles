@@ -8,10 +8,8 @@
     ~/.gitconfig: config/gitconfig
     ~/.gitignore_global: config/gitignore_global
     ~/.gemrc: config/gemrc
-    ~/.gvimrc: config/gvimrc
     ~/.vim: vim/
-    ~/.vimrc.local: config/vimrc.local
-    ~/.vimrc: config/vimrc
+    ~/.vimrc: vimrc
     ~/.tmux: tmux/
     ~/.tmux.conf: config/tmux.conf
     ~/.irbrc: config/irbrc
@@ -37,3 +35,4 @@
 # NOTES:
 # There is a streamlined way to do the shell commands but I prefer
 # seeing the stdin/out/err so this is why I set this as such.
+# command: vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on" +BundleClean! +BundleInstall +qall
