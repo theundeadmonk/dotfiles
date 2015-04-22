@@ -48,7 +48,7 @@
 # User Aliases
 # ---------------------------------------
 
-  source $HOME/.aliases
+  source $HOME/.zsh/aliases
   
 # ---------------------------------------
 # Functions

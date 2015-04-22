@@ -23,8 +23,12 @@
     ~/.vimrc:
         force: true
         path: vimrc
-    ~/.tmux: tmux/
-    ~/.tmux.conf: config/tmux.conf
+    ~/.tmux:
+        force: true
+        path: tmux/
+    ~/.tmux.conf:
+        force: true
+        path: tmux/tmux.conf
     ~/.aprc:
         force: true
         path: irb/aprc
@@ -34,9 +38,15 @@
     ~/.pryrc:
         force: true
         path: irb/pryrc
-    ~/.zshrc: config/zshrc
-    ~/.zshenv: config/zshenv
-    ~/.aliases: config/aliases
+    ~/.zsh:
+        force: true
+        path: zsh
+    ~/.zshrc:
+        force: true
+        path: zsh/zshrc
+    ~/.zshenv:
+        force: true
+        path: zsh/zshenv
 -
   shell:
     -

@@ -125,8 +125,12 @@
 #   Vim
 #   ---------------------------------------
 #
-    alias vim='mvim -n -v -N'
-    alias mvim='mvim -n -N -c "set noballooneval"'
+    mvim --version > /dev/null 2>&1
+    MACVIM_INSTALLED=$?
+    if [ $MACVIM_INSTALLED -eq 0 ]; then
+        alias vim='mvim -n -v -N'
+        alias mvim='mvim -n -N -c "set noballooneval"'
+    fi
 
 #   ---------------------------------------
 #   Personal Aliases
