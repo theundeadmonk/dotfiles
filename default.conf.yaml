@@ -1,13 +1,18 @@
---- 
-- 
+---
+-
   clean:
     - "~"
-- 
-  link: 
+-
+  link:
     ~/.dotfiles:
         force: true
         path: ""
-    ~/.gitconfig: config/gitconfig
+    ~/.gitconfig:
+        force: true
+        path: git/gitconfig
+    ~/.gitconfig.user:
+        force: true
+        path: git/gitconfig.user
     ~/.gitignore_global: config/gitignore_global
     ~/.gemrc:
         force: true
@@ -15,7 +20,9 @@
     ~/.vim:
         force: true
         path: vim
-    ~/.vimrc: vimrc
+    ~/.vimrc:
+        force: true
+        path: vimrc
     ~/.tmux: tmux/
     ~/.tmux.conf: config/tmux.conf
     ~/.aprc:
@@ -30,15 +37,15 @@
     ~/.zshrc: config/zshrc
     ~/.zshenv: config/zshenv
     ~/.aliases: config/aliases
-- 
+-
   shell:
-    - 
+    -
       command: git submodule update --init --recursive --remote
       description: "Installing/Updating git submodules"
       stdin: true
       stdout: true
       stderr: true
-    - 
+    -
       command: vim +PluginInstall +qall
       description: "Installing/Updating vim bundles"
       stdin: true
