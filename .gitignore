@@ -1,5 +1,6 @@
 # Ignore Vundle plugins (this will be managed by Vundle itself instead of git)
 vim/bundle
+vim/backups
 
 # Ignore tmux plugins (this will be managed by tmux-plugin itself)
 tmux/plugins

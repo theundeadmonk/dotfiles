@@ -13,7 +13,9 @@
     ~/.gitconfig.user:
         force: true
         path: git/gitconfig.user
-    ~/.gitignore_global: config/gitignore_global
+    ~/.gitignore:
+        force: true
+        path: git/gitignore
     ~/.gemrc:
         force: true
         path: ruby/gemrc
