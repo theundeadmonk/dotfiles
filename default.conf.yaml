@@ -4,16 +4,29 @@
     - "~"
 - 
   link: 
-    ~/.dotfiles: ""
+    ~/.dotfiles:
+        force: true
+        path: ""
     ~/.gitconfig: config/gitconfig
     ~/.gitignore_global: config/gitignore_global
-    ~/.gemrc: config/gemrc
-    ~/.vim: vim/
+    ~/.gemrc:
+        force: true
+        path: ruby/gemrc
+    ~/.vim:
+        force: true
+        path: vim
     ~/.vimrc: vimrc
     ~/.tmux: tmux/
     ~/.tmux.conf: config/tmux.conf
-    ~/.irbrc: config/irbrc
-    ~/.pryrc: config/pryrc
+    ~/.aprc:
+        force: true
+        path: irb/aprc
+    ~/.irbrc:
+        force: true
+        path: irb/irbrc
+    ~/.pryrc:
+        force: true
+        path: irb/pryrc
     ~/.zshrc: config/zshrc
     ~/.zshenv: config/zshenv
     ~/.aliases: config/aliases
