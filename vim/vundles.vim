@@ -7,13 +7,11 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 
 " Ruby, Rails, Rake...
-Bundle "ecomba/vim-ruby-refactoring"
 Bundle "tpope/vim-rails.git"
 Bundle "tpope/vim-rake.git"
 Bundle "tpope/vim-rvm.git"
 Bundle "vim-ruby/vim-ruby.git"
 Bundle "Keithbsmiley/rspec.vim"
-Bundle "skwp/vim-iterm-rspec"
 Bundle "skwp/vim-spec-finder"
 Bundle "ck3g/vim-change-hash-syntax"
 
@@ -48,7 +46,7 @@ Bundle "Raimondi/delimitMate"
 Bundle "Shougo/neocomplcache.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
 Bundle "godlygeek/tabular"
-Bundle "skwp/vim-easymotion"
+Bundle "Lokaltog/vim-easymotion"
 Bundle "tomtom/tcomment_vim.git"
 Bundle "tpope/vim-bundler"
 Bundle "vim-scripts/camelcasemotion.git"

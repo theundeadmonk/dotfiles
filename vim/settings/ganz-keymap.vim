@@ -41,7 +41,7 @@ vmap ,# c#{<C-R>"}<ESC>
 " ," Surround a word with "quotes"
 map ," ysiw"
 vmap ," c"<C-R>""<ESC>
-
+ 
 " ,' Surround a word with 'single quotes'
 map ,' ysiw'
 vmap ,' c'<C-R>"'<ESC>
@@ -95,6 +95,7 @@ imap <C-a> <esc>wa
 " ==== NERD tree
 " Cmd-Shift-N for nerd tree
 nmap <leader>n :NERDTreeToggle<CR>
+
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
@@ -195,8 +196,8 @@ map 0 ^
 
 " Reselect visual block after indent/outdent
 vnoremap < <gv
-
 vnoremap > >gv
+
 " Clear current search highlight by double tapping //
 nmap <silent> // :nohlsearch<CR>
 
