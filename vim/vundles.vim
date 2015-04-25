@@ -109,7 +109,6 @@ Bundle "lucapette/vim-textobj-underscore"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "thinca/vim-textobj-function-javascript"
-Bundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
 Bundle "chrisbra/color_highlight.git"
@@ -117,7 +116,6 @@ Bundle "magicalbanana/vim-colors"
 Bundle "vim-scripts/TagHighlight.git"
 Bundle "bogado/file-line.git"
 Bundle "jby/tmux.vim.git"
-Bundle "morhetz/gruvbox"
 Bundle "bling/vim-airline.git"
 
 "Filetype plugin indent on is required by vundle
