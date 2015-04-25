@@ -1,5 +1,6 @@
 " To open NERDTreeToggle
 nmap <leader>n :NERDTreeToggle<CR>
+nmap <silent>t :NERDTreeToggle<CR>
 
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
