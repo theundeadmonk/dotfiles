@@ -129,9 +129,12 @@ imap <silent> <C-J> <%  %><Esc>2hi
 nnoremap <silent> ,cf :let @* = expand("%:~")<CR>
 nnoremap <silent> ,cn :let @* = expand("%:t")<CR>
 
+" fast saving
+nmap ;w :w<CR>
+
 " formatted paste
 nmap <leader>p pV`]=
-nmap <leader>P PV`]=
+nmap <leadervP PV`]=
 
 " Remap VIM 0 to first non-blank character
 map 0 ^

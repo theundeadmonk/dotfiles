@@ -40,6 +40,9 @@
     ~/.pryrc:
         force: true
         path: irb/pryrc
+    ~/.pryrc-helpers.rb:
+      force: true
+      path: irb/pryrc-helpers.rb
     ~/.zsh:
         force: true
         path: zsh
