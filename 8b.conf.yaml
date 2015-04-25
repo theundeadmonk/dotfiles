@@ -1,0 +1,58 @@
+---
+-
+  clean:
+    - "~"
+-
+  link:
+    ~/.dotfiles:
+        force: true
+        path: ""
+    ~/.vim:
+        force: true
+        path: vim
+    ~/.vimrc:
+        force: true
+        path: vimrc
+    ~/.tmux:
+        force: true
+        path: tmux/
+    ~/.tmux.conf:
+        force: true
+        path: tmux/tmux.conf
+    ~/.aprc:
+        force: true
+        path: irb/aprc
+    ~/.irbrc:
+        force: true
+        path: irb/irbrc
+    ~/.pryrc:
+        force: true
+        path: irb/pryrc
+    ~/.zsh:
+        force: true
+        path: zsh
+    ~/.zshrc:
+        force: true
+        path: zsh/zshrc
+    ~/.zshenv:
+        force: true
+        path: 8b/zsh/zshenv
+-
+  shell:
+    -
+      command: git submodule update --init --recursive
+      description: "Installing/Updating git submodules"
+      stdin: true
+      stdout: true
+      stderr: true
+    -
+      command: vim +PluginInstall +qall
+      description: "Installing/Updating vim bundles"
+      stdin: true
+      stdout: true
+      stderr: true
+
+# NOTES:
+# There is a streamlined way to do the shell commands but I prefer
+# seeing the stdin/out/err so this is why I set this as such.
+# command: vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on" +BundleClean! +BundleInstall +qall
