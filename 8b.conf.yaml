@@ -7,6 +7,15 @@
     ~/.dotfiles:
         force: true
         path: ""
+    ~/.gitconfig:
+        force: true
+        path: git/gitconfig
+    ~/.gitconfig.user:
+        force: true
+        path: 8b/git/gitconfig.user
+    ~/.gitignore:
+        force: true
+        path: git/gitignore
     ~/.vim:
         force: true
         path: vim
